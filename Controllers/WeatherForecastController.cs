@@ -4,7 +4,15 @@ namespace dotnet_rpg.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class 
+
+
+
+
+
+
+
+ : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
