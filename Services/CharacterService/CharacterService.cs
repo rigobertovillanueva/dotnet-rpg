@@ -46,8 +46,8 @@ namespace dotnet_rpg.Services.CharacterService
             ServiceResponse.Data = _mapper.Map<GetCharacterDto>(character);
             return ServiceResponse;
 
-
         }
+
 
         public async Task<ServiceResponse<GetCharacterDto>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
         {
@@ -63,8 +63,8 @@ namespace dotnet_rpg.Services.CharacterService
 
             serviceResponse.Data = _mapper.Map<GetCharacterDto>(character);
             return serviceResponse;
-
         }
+
 
     }
 
