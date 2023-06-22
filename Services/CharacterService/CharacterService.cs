@@ -35,7 +35,7 @@ namespace dotnet_rpg.Services.CharacterService
         {
             var serviceResponse = new ServiceResponse<List<GetCharacterDto>>();
             try
-        
+
             {
 
                 var character = characters.FirstOrDefault(c => c.Id == id);
@@ -45,7 +45,7 @@ namespace dotnet_rpg.Services.CharacterService
 
                 characters.Remove(character);
 
-                serviceResponse.Data =  characters.Select(c => _mapper.Map<GetCharacterDto>(c)).ToList();
+                serviceResponse.Data = characters.Select(c => _mapper.Map<GetCharacterDto>(c)).ToList();
 
             }
             catch (Exception ex)
